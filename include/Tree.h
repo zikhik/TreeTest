@@ -64,16 +64,16 @@ public:
 	bool operator == (const BStree<T> & tree);
 	auto begin() const->iterator;
 	auto end() const->iterator;
-	bool Insert(const T x);// Δξαΰβλενθε ύλεμενςΰ 
-	bool Search(const T x);// Οξθρκ ύλεμενςΰ 
-	bool del(T x); //σδΰλενθε σηλΰ δεπεβΰ 
+	bool Insert(const T x);// Γ„Γ®Γ΅Γ ΓΆΓ«Γ¥Γ­Γ¨Γ¥ Γ½Γ«Γ¥Γ¬Γ¥Γ­Γ²Γ  
+	bool Search(const T x);// ΓΓ®Γ¨Γ±Γª Γ½Γ«Γ¥Γ¬Γ¥Γ­Γ²Γ  
+	bool del(T x); //Γ³Γ¤Γ Γ«Γ¥Γ­Γ¨Γ¥ Γ³Γ§Γ«Γ  Γ¤Γ¥Γ°Γ¥ΓΆΓ  
 	size_t size();
 	friend ostream & operator<< <>(ostream &out, BStree<T> &tree);
 	friend ofstream & operator<< <>(ofstream &fout, BStree<T> &tree);
 	friend ifstream & operator>> <>(ifstream &fin, BStree<T> &tree);
 	friend istream & operator >> <>(istream & in, BStree<T> &tree);
 	class Root;
-	Root* root; //κξπενό δεπεβΰ 
+	Root* root; //ΓªΓ®Γ°Γ¥Γ­ΓΌ Γ¤Γ¥Γ°Γ¥ΓΆΓ  
 
 	static auto  fillListOfNodes(list<const Root*> & listOfNodes, const Root* root)->void;
 	class NodeIterator {
@@ -88,7 +88,6 @@ public:
 
 	};
 };
-
 template <class T>
 class BStree<T>::Root {
 public:
