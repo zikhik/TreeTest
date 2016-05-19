@@ -1,4 +1,4 @@
-#include <BStree.cpp>
+#include <tree.cpp>
 #include <catch.hpp>
 #include <fstream>
 #include <iostream> 
